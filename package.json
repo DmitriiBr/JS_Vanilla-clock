@@ -1,19 +1,24 @@
 {
   "name": "2__my_clock",
   "version": "1.0.0",
-  "description": "",
+  "description": "Mb this it good :)",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DmitriiBr/Vanilla-JS-clock.git"
+    "url": "git+https://github.com/DmitriiBr/JS_Vanilla-clock.git"
   },
+  "keywords": [
+    "Js",
+    "Vanilla",
+    "clock"
+  ],
   "author": "DmitriiBr",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DmitriiBr/Vanilla-JS-clock/issues"
+    "url": "https://github.com/DmitriiBr/JS_Vanilla-clock/issues"
   },
-  "homepage": "https://github.com/DmitriiBr/Vanilla-JS-clock#readme"
+  "homepage": "https://github.com/DmitriiBr/JS_Vanilla-clock#readme"
 }
