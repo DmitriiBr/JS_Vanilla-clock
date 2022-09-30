@@ -1,0 +1,76 @@
+.btn {
+  cursor: pointer;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  border: none;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  max-width: 80px;
+  // background-color: rgba(95, 95, 95);
+  background-color: rgb(77, 77, 77);
+  transition: all .3s ease;
+
+  &:hover {
+    background-color: rgba(137,137,137);
+  }
+
+  &--start{
+    color: var(--medieval-color)
+  }
+  
+  &:active {
+    font-size: 23px;
+    background-color: rgba(139, 139, 139, 0.4);
+  }
+  
+  &--stop {
+    color: var(--torquoise-color);
+  }
+  
+  &--reset {
+    color: var(--ceruse-color);
+  }
+  
+  &--save {
+    color: rgb(74, 248, 62);
+  }
+}
+
+
+.btn-roll {
+  position: relative;
+  z-index: 1000;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  height: 10px;
+  background-color: rgba(86, 86, 86);
+  transform: translateY(0);
+  font-size: 14px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    bottom: 1;
+    right: 50%;
+    background-color: var(--rich-black-color);
+    border-radius: 5px;
+    transform: translateX(50%);
+    transition: all .3s ease;
+  }
+}
+
+.animated-between.btn-roll::after {
+  width: 80px;
+}
+
+.unclickable {
+  pointer-events: none;
+  color: gray;
+}

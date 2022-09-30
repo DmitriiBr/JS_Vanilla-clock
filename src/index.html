@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- <link rel="stylesheet" href="scss/main.scss"> -->
+
+  <title>Minimalictic timer</title>
+</head>
+
+<body class="body">
+  <div class="saved-time"></div>
+  <div class="container">
+    <div class="clock ">
+      <span class="progress-bar"></span>
+      <div class="hours clock__value">00</div>
+      <div class="minutes clock__value">00</div>
+      <div class="seconds clock__value">00</div>
+      <div class="miliseconds clock__value">00</div>
+    </div>
+
+    <div class="modes modes--container hidden">
+      <div class="countdown-timer mode-wrapper active">
+        <div class="mode-overlay" data-index="0"></div>
+        <h3 class="countdown-timer__title title">Countdown:</h3>
+        <div class="controls countdown-timer__controls">
+          <button class="btn btn--start countdown-timer__btn">start</button>
+          <button class="btn btn--reset countdown-timer__btn">reset</button>
+          <button class="btn btn--stop countdown-timer__btn unclickable">stop</button>
+        </div>
+        <div class=" input--placer">
+          <input class="time-input" type="number" placeholder="minutes">
+          <span class="time-input--underline"></span>
+        </div>
+      </div>
+
+      <div class="stopwatch-timer mode-wrapper">
+        <div class="mode-overlay mode-overlay--show" data-index="1"></div>
+        <h3 class="stopwatchn-timer__title title">Stopwatch:</h3>
+        <div class="controls stopwatch-timer__controls">
+          <button class="btn btn--start stopwatch-timer__btn">start</button>
+          <button class="btn btn--save stopwatch-timer__btn unclickable">save</button>
+          <button class="btn btn--reset stopwatch-timer__btn">reset</button>
+          <button class="btn btn--stop stopwatch-timer__btn unclickable">stop</button>
+        </div>
+      </div>
+
+      <div class="pomodoro-timer mode-wrapper">
+        <div class="mode-overlay mode-overlay--show" data-index="2"></div>
+        <h3 class="pomodoro-timer__title title">Pomodoro:</h3>
+        <div class="pomodoro-timer__mode-switcher">
+          <button class="btn pomodoto-timer__btn btn--switch" data-switch="0">25</button>
+          <button class="btn pomodoto-timer__btn btn--switch" data-switch="1">50</button>
+          <button class="btn pomodoto-timer__btn btn--switch" data-switch="2">60</button>
+        </div>
+        <div class="controls pomodoro-timer__controls">
+          <button class="btn btn--start pomodoro-timer__btn">start</button>
+          <button class="btn btn--reset pomodoro-timer__btn">reset</button>
+          <button class="btn btn--stop pomodoro-timer__btn unclickable">stop</button>
+        </div>
+      </div>
+
+    </div>
+    <button class="btn btn-roll"></button>
+
+  </div>
+
+  <script src="main.js" type="module"></script>
+</body>
+
+</html>
